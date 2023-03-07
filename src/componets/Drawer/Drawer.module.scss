@@ -1,0 +1,80 @@
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out, visibility 0.1s ease-in-out;
+    overflow: hidden;
+}
+.overlayVisible{
+    visibility: visible;
+    opacity: 1;
+    .drawer{
+        transform: translateX(0);
+    }
+}
+
+.drawer{
+    position: absolute;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 385px;
+    background-color: #ffff;
+    .drawHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #eaeaea;
+        h1{
+            margin: 0;
+        }
+        img{
+            cursor: pointer;
+        }
+    }
+    .drawItem{
+        display: flex;
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid #f3f3f3;
+        border-radius: 40px;
+        h5{
+            padding-left: 7px;
+        }
+    }
+    .test{
+        display: flex;
+    }
+    .drawerEmpty{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        h1{
+            font-size: 22px;
+        }
+        button{
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: lightgreen;
+            border: 2px solid #2e2727;
+            cursor: pointer;
+            transition: background 0.1s ease-in-out;
+            &:hover{
+                background-color: lightgreen;
+            }
+            &:active{
+                background: darken(green, 1%) ;
+            }
+        }
+    }
+}
