@@ -1,7 +1,7 @@
 {
   "name": "vite-project",
   "private": true,
-  "homepage": "https://github.com/IvanOstapiv/react-crowProject",
+  "homepage": "https://ivanostapiv.github.io/react-crowProject/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
